@@ -1,0 +1,134 @@
+.nav__bar{
+    background-color: white;
+    padding: var(--custom-padding);
+
+ 
+}
+.nav__bar__top{
+    display: flex;
+    justify-content:space-between;
+    align-items: center
+    ;
+    padding: 0;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom:  1px solid var(--blue);
+
+}
+.top_nav_list{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    text-transform: uppercase;
+    color: var(--orange);
+    align-items: center;
+   
+}
+.list__item button{
+    background-color: inherit;
+    border: 3px solid var(--orange);
+    padding: 5px 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.logo{
+    color: var(--blue);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.nav__bar__bottom{
+    display: flex;
+    justify-content: space-around;
+   
+    align-items: center;
+ 
+    
+
+}
+
+  .list-with-dropdown {
+    position: relative;
+   
+
+  }
+  .dropdown-list {
+    display: flex;
+
+  
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-align: left;
+  
+    gap: 20px;
+    text-transform: capitalize;
+    /* margin-left: 20px; */
+  }
+  
+  .dropdown .dropdown-list:last-child a {
+    margin-bottom: 0;
+  }
+  
+  .dropdown-container {
+   
+    transform: translate(0, 10px);
+    position: absolute;
+    pointer-events: none;
+    /* left: -3.5rem; */
+    opacity: 0;
+    padding-top: 10px;
+  }
+  
+  .dropdown {
+   
+    top: 100%;
+    line-height: 1.1rem;
+    box-shadow: var(--box-shadow);
+    background-color:white;
+    border: 3px solid var(--blue);
+    padding: 25px 20px;
+    border-radius: 10px;
+   
+    overflow-y: scroll;
+  }
+  
+ 
+  
+  .list-with-dropdown:hover .dropdown-container {
+    position: absolute;
+    opacity: 1;
+    pointer-events: unset;
+    transform: translate(0, 0);
+    transition: 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .dropdown-text .text-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    display: block;
+  }
+  .dropdown-text .text-description {
+    font-size: 14px;
+  }
+  .dropdown-label {
+    position: relative;
+    cursor: pointer;
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .lunch__sale__con{
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue);
+    color: var(--orange);
+    padding: 10px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+
+  }

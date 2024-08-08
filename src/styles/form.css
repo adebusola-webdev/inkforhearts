@@ -1,0 +1,86 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup {
+    background:var(--blue);
+    padding: 50px 20px ;
+    border-radius: 5px;
+    position: relative;
+    width: 300px;
+  }
+  
+
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: var(--orange);
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 2px solid var(--orange);
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"] {
+    border: 1px solid var(--orange);
+    color: white;
+     margin-top: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: inherit;
+    color: var(--orange);
+    transition: 0.25s;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background:var(--orange);
+    color: white;
+  }
+  .popup h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: var(--orange);
+  }
+ .popup-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px ;
+ }
+ .close-btn{
+    background-color: inherit;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--orange);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: var(--orange);
+    cursor: pointer;
+
+ }
