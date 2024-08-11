@@ -1,16 +1,16 @@
 /* src/components/Footer.css */
 .footer {
-    background-color: #333;
+    background-color: var(--blue);
     color: #fff;
     padding: 20px;
-    text-align: center;
+    margin-top: 50px;
+
   }
   
   .footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+ display: flex;
     margin-bottom: 20px;
+    justify-content: space-between;
   }
   
   .footer-section {
@@ -18,7 +18,7 @@
   }
   
   .footer-section h4 {
-    border-bottom: 1px solid #fff;
+ 
     padding-bottom: 10px;
   }
   
@@ -44,10 +44,19 @@
     display: flex;
     justify-content: center;
     padding: 0;
+    gap: 70px;
+    
   }
   
   .social-media li {
     margin: 0 10px;
+    font-size: 20px;
+    color: var(--orange);
+  }
+    
+  .social-media li a{
+
+    color: var(--orange);
   }
   
   .footer-bottom {
@@ -77,5 +86,9 @@
   
   .footer-bottom ul li a:hover {
     text-decoration: underline;
+  }
+
+  .social-media{
+    display: flex;
   }
   

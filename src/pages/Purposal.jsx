@@ -1,12 +1,8 @@
 import React from 'react'
+import HeroSection from '../component/HeroSection';
+import CreatePersonalizedsteps from '../component/CreatePersonalizedsteps'
 
-import '../styles/home.css'
-import { Link } from 'react-router-dom'
-
-import HeroSection from './HeroSection'
-
-import CreatePersonalizedsteps from './CreatePersonalizedsteps'
-export const Home = () => {
+export const Purposal = () => {
     const stepsData = [
         {
           image: 'path/to/image1.png',
@@ -30,8 +26,9 @@ export const Home = () => {
     <div>
 
     <HeroSection
-        title="It's your story, tell it and make someone feel special."
-        subtitle="Create a personalized book that lists all the reasons why you love someone."
+        title="A special moment
+        requires a special gift"
+        subtitle="Create your own proposal book that lists all the reasons why you love them."
         buttonText="Create a book now!"
         buttonLink="/create-book"
       />

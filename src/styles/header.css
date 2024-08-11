@@ -55,9 +55,10 @@
   }
   .dropdown-list {
     display: flex;
-
+   flex: 1;
+   justify-content: space-between;
   
-    width: 100%;
+    width: 600px;
     border-radius: 10px;
     margin-bottom: 10px;
     text-decoration: none;
@@ -65,7 +66,7 @@
   
     gap: 20px;
     text-transform: capitalize;
-    /* margin-left: 20px; */
+     margin-bottom: 40px;
   }
   
   .dropdown .dropdown-list:last-child a {
@@ -132,3 +133,15 @@
     text-transform: uppercase;
 
   }
+  /* header.css */
+.dropdown-container {
+  display: none;
+  position: absolute;
+  /* Other styles */
+}
+
+.list-with-dropdown:hover .dropdown-container,
+.list-with-dropdown.active .dropdown-container {
+  display: block;
+}
+

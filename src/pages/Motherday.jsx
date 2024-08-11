@@ -1,12 +1,9 @@
 import React from 'react'
+import HeroSection from '../component/HeroSection';
+import CreatePersonalizedsteps from '../component/CreatePersonalizedsteps'
 
-import '../styles/home.css'
-import { Link } from 'react-router-dom'
 
-import HeroSection from './HeroSection'
-
-import CreatePersonalizedsteps from './CreatePersonalizedsteps'
-export const Home = () => {
+export const Motherday = () => {
     const stepsData = [
         {
           image: 'path/to/image1.png',
@@ -30,8 +27,8 @@ export const Home = () => {
     <div>
 
     <HeroSection
-        title="It's your story, tell it and make someone feel special."
-        subtitle="Create a personalized book that lists all the reasons why you love someone."
+        title="Tell Mom Why She's Amazing - In Her Own Book"
+        subtitle="The original personalized gift book that lets you list all the reasons why you love someone"
         buttonText="Create a book now!"
         buttonLink="/create-book"
       />
@@ -45,4 +42,5 @@ export const Home = () => {
 
     </div>
   )
+
 }

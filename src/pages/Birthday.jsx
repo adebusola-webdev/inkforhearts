@@ -1,12 +1,8 @@
 import React from 'react'
+import HeroSection from '../component/HeroSection';
+import CreatePersonalizedsteps from '../component/CreatePersonalizedsteps';
 
-import '../styles/home.css'
-import { Link } from 'react-router-dom'
-
-import HeroSection from './HeroSection'
-
-import CreatePersonalizedsteps from './CreatePersonalizedsteps'
-export const Home = () => {
+function Birthday() {
     const stepsData = [
         {
           image: 'path/to/image1.png',
@@ -25,13 +21,12 @@ export const Home = () => {
         }
       ];
 
-  
   return (
-    <div>
-
-    <HeroSection
-        title="It's your story, tell it and make someone feel special."
-        subtitle="Create a personalized book that lists all the reasons why you love someone."
+    <>
+         <HeroSection
+        title="A BIRTHDAY GIFT THEY WILL LOVE FOREVER"
+        subtitle="The original personalized gift book that lets you list all those silly, fun, romantic reasons why you love them.
+        "
         buttonText="Create a book now!"
         buttonLink="/create-book"
       />
@@ -40,9 +35,10 @@ export const Home = () => {
         subTitle="Expressing why someone is special has never been this easy and fun! Each Book is a personalized collection of all the little reasons why you love or appreciate someone. Customize your book as much or as little as you'd like."
         steps={stepsData}
       />
-  
-
-
-    </div>
+        
+       
+    </>
   )
 }
+
+export default Birthday;
